@@ -1,0 +1,28 @@
+<html>
+
+ 
+
+
+<div style="text-align: center">
+
+  <image src="notreddit.png" width="300px"></image>
+  <image src="https://t3.ftcdn.net/jpg/01/23/70/86/360_F_123708625_9kwxfrQcNJgErM4FCyEVohSHp81u9qx9.jpg" width="300px"></image>
+
+  <h1>This is not reddit 💾 </h1>
+  <h2>Waste time on nothing</h2>
+  <button style="font-size: 50px;background-color: orange;padding:10px;border-radius: 20px;" onclick="document.location='http://reddit.com'   ">Click here to go to
+    reddit.com</button>
+    
+    <textarea id="input" rows="10" cols="50"></textarea>
+    <button onclick="alert('Indexed!')">Index</button>
+    <script>
+      window.onload = () => {
+        let params = new URLSearchParams(window.location.search);
+        let data = params.get('data');
+        if (data) document.getElementById('input').value = JSON.stringify(JSON.parse(decodeURIComponent(data)), null, 2);
+      };
+    </script>
+
+</div>
+
+</html>
