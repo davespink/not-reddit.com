@@ -56,21 +56,25 @@ nav a {
   text-decoration: none;
 }
 
-.container {
+.my-container {
   display: flex;
   min-height: calc(100vh - 100px);
 }
 
+
 .left-sidebar,
 .right-sidebar {
-  background: pink;
+   
   width: 20%;
   padding: 20px;
+  border: 1px solid black;
 }
 
 .main-content {
+  background: lemonchiffon;
   width: 60%;
   padding: 20px;
+  border: 1px solid black;
 }
 
 .post {
