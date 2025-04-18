@@ -1,4 +1,11 @@
 /* Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box model behavior */
+}
+
 body {
   background: white;
   color: black;
@@ -6,8 +13,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 a {
   color: black
+}
+
+p {
+  margin-top:0px;
+  margin-bottom:2px;
 }
 
 .hidden {
@@ -64,7 +77,7 @@ nav a {
 
 .left-sidebar,
 .right-sidebar {
-   
+
   width: 20%;
   padding: 20px;
   border: 1px solid black;
@@ -106,6 +119,13 @@ nav a {
     width: 100%;
     margin: 10px 0;
   }
+
+  /* Add spacing between paragraphs in the left sidebar  
+  .left-sidebar p {
+    margin-bottom: 2px;
+    
+     Adjust the spacing as needed 
+  }*/
 
   nav {
     justify-content: space-around;
