@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -15,37 +16,153 @@
   <link rel="stylesheet" href="notreddit.css">
 </head>
 
-
-
-
+<html lang="en">
 
 <body>
+  <header>
+    <div class="logo"><img src="images/notreddit.png" width="35px">&nbsp;not-reddit</div>
+    <input type="text" placeholder="Don’t bother searching here" style="height:40px;border-radius: 20px;">
+    <div class="user-controls">User</div>
+  </header>
+  <nav class="hidden">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </nav>
   <div class="my-container">
-    <header class="bg-primary text-white text-center py-3">
-      <h1>Not Reddit April</h1>
-      <p>Your alternative to Reddit</p>
-    </header>
+    <aside class="left-sidebar">
+      <p> <a href="#">Old Posts ( old pieces of wood )</a> </p>
+      <p> <a href="#">New Posts ( new pieces of wood )</a> </p>
 
-    <div class="container row">
-      <aside class="col-12 col-md-3 left-sidebar">
-        LLLLLL
-        <!-- Left sidebar content -->
-      </aside>
-      <main class="col-12 col-md-6 main-content">
-        <!-- Main content -->
-        CCCCC
-      </main>
-      <aside class="col-12 col-md-3 right-sidebar">
-        <!-- Right sidebar content -->
-        RRRRRR
-      </aside>
-    </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4">
-      <p>&copy; 2025 Not Reddit. All rights reserved.</p>
-    </footer>
+
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          data-bs-placement="bottom" style="color:black ; background:transparent; border-color: transparent;"
+          aria-expanded="false">
+          Contact the mods!
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="The guitarist of The Who">Pete
+              Townsend</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="The lead singer of The Who">Roger
+              Daltry</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="The frontman of The Jam">Paul Weller</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="The frontman of The Jam">Paul Weller</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="The frontman of The Jam">Paul Weller</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="The Bloke in Quadraphenia"> Phil Daniels</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="A photo of Captain Peter Townsend">
+              <img src="images/peter_townsend.jpg" alt="Pete Townsend" style="max-width: 80px; height: auto;">
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="tooltip" title="Turnip Townsend argriculture pioneer">
+              <img src="images/turnip_townsend.jpg" alt="Turnip Townsend" style="max-width: 80px; height: auto;">
+            </a>
+          </li>
+
+          
+
+        </ul>
+      </div>
+
+
+
+    </aside>
+    <main class="main-content">
+
+<button onclick="window.location='https://reddit.com'" 
+ style="width:100%;height:80vh;background-color: red;color:white;font-size: 80px;">This IS NOT REDDIT TO GO TO REDDIT.COM Click here</button>
+
+
+    </main>
+
+
+    <aside class="right-sidebar">
+      <p>Unpopular Today</p>
+      <p>Never Popular</p>
+      <p>Dead Topic ( photo of parrot ( dead ) )</p>
+      <p>Who Cares ( photo of "The Who" caring )</p>
+      <button class="btn btn-danger">XXXX</button>
+
+
+
+    </aside>
   </div>
+
+
+
+
 </body>
+
+
+
+
+<!--
+
+Co pilot solution to show image on hover
+
+
+<style>
+  .dropdown-item {
+    position: relative; /* Required for positioning the hover image */
+  }
+
+  .dropdown-item img {
+    display: none; /* Hide the image by default */
+    position: absolute;
+    top: 100%; /* Position the image below the text */
+    left: 0;
+    max-width: 150px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px;
+    z-index: 1000;
+  }
+
+  .dropdown-item:hover img {
+    display: block; /* Show the image on hover */
+  }
+</style>
+
+<ul class="dropdown-menu">
+  <li>
+    <a class="dropdown-item" href="#">
+      Pete Townsend
+      <img src="images/peter_townsend.jpg" alt="Pete Townsend">
+    </a>
+  </li>
+  <li>
+    <a class="dropdown-item" href="#">
+      Roger Daltry
+      <img src="images/roger_daltry.jpg" alt="Roger Daltry">
+    </a>
+  </li>
+  <li>
+    <a class="dropdown-item" href="#">
+      Paul Weller
+      <img src="images/paul_weller.jpg" alt="Paul Weller">
+    </a>
+  </li>
+</ul>
+
+
+
+-->
+
 
 
 </html>
